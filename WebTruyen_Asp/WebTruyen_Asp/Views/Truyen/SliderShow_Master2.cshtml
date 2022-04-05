@@ -1,0 +1,12 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.NguoiDang_Truyen>
+@foreach (var truyen in Model)
+{
+    <section>
+        <div class="text-center">
+            <img src="~/images/img_truyen/@truyen.AnhBia" style="box-shadow: 5px 5px 5px grey; "/>
+            <div class="font-weight-semibold py-1 pt-2">@truyen.TenTruyen</div>
+            <div class="py-2 text-overflow-2-lines">Giới Thiệu</div>
+            <div class="mt-4"> <a class="type-story" href="#">@truyen.TheLoai</a></div>
+        </div>
+    </section>
+}

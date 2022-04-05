@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/NguoiDung/_LayoutDangNhap.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div action="" class="form-login">
+        <h2 class="text-center py-3">Đăng Nhập</h2>
+        <input name="Email" type="text" placeholder="Địa Chỉ Email">
+        <input name="MatKhau" type="password" placeholder="Mật khẩu">
+        <div>
+            <a href="#">Quên Mật khẩu</a>
+            <a href="@Url.Action("DangKy","NguoiDung")" class="float float-right">Đăng ký</a>
+        </div>
+        <button type="submit" class="btn btn-danger">Đăng Nhập</button>
+        <div class="or"><i>Or</i></div>
+        <span><i class="fab fa-facebook"></i></span>
+        <span><i class="fab fa-google-plus"></i></span>
+    </div>
+}
+
+

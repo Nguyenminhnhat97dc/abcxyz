@@ -1,0 +1,20 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.MoiHoanThanh>
+
+@foreach (var truyen in Model)
+{
+        <div class="col-6 pb-3">
+            <div class="media">
+                <a href="@Url.Action("ChiTietTruyen","Truyen",new {id=truyen.MaTruyen })"><img src="~/images/img_truyen/@truyen.AnhBia" width="85" height="110" style="box-shadow: 5px 5px 5px gray;"></a>
+                <div class="media-body px-3 text-capitalize">
+                    <a class="a-no-style" href="@Url.Action("ChiTietTruyen","Truyen",new {id=truyen.MaTruyen})"><h4>@truyen.TenTruyen</h4></a>
+                    <div class="text-overflow-2-lines fz-14">asdsaasdhasjk djkas  aksdhaskjdh askd há jkhdkj ashdkj askd hsajk đákjád á d da sd  da sdasd sadasd d á dsa</div>
+                    <div class="align-items-center mt-2 py-1 ">
+                        <div class="text-secondary float-left"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;@truyen.TenND</div>
+                        <a class="type-story float-right" href="#">@truyen.TheLoai</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- -------------Cột 2222222222 -->
+}

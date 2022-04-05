@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap4-1-3.min.css" />
+    <link rel="stylesheet" href="~/Content/css/Nav.css" />
+    <link rel="stylesheet" href="~/Content/css/all.css" />
+    <link rel="stylesheet" href="~/images/img_truyen" />
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--  <script src="abc.js" type="text/javascript"></script> -->
+    <script src="~/Content/js/JavaScript.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/94819dbc12.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        body main {
+            background: url(../../images/home-bg.jpg) no-repeat top;
+            display: block;
+        }
+        footer {
+            background: url("https://metruyenchu.com/assets/images/footer-bg.png") no-repeat bottom;
+        }
+    </style>
+    @RenderSection("css", false)
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-static-top ">
+        <a class="navbar-brand" href="@Url.Action("index","Truyen")">
+            <img src="~/images/logo-domain.png" height="68" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle  fz-18" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể Loại
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <ul class="row list-unstyled mr-2 ml-2">
+                            @Html.Action("Category_TheLoai", "Truyen")
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li calss="nav-item">
+                    @using (Html.BeginForm("TimKiem", "Truyen"))
+                    {
+                        <div class="input-group">
+
+                            <input name="TenTruyen" type="text" class="form-control" placeholder="Tìm kiếm">
+
+                            <div class="input-group-append">
+                                <button id="click-sreach" class="btn btn-secondary" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    }
+                </li>
+                <li class="nav-item ml-2">
+                    @if (Session["TaiKhoan"] == null)
+                    {
+                        <div class="btn btn-secondary"><a class="a-no-style text-white" href="@Url.Action("DangNhap", "NguoiDung")">Đăng Nhập</a></div>
+                    }
+                    else
+                    {
+                        <div class="btn btn-secondary"><a class="a-no-style text-white" href="@Url.Action("DangNhap", "NguoiDung")">@Session["TaiKhoan"].ToString()</a></div>
+                    }
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    @RenderBody()
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Content/js/abc.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+    @RenderSection("scripts", required: false)
+    @section scripts{
+        @Scripts.Render("~/Scripts/jquery-3.4.1.js")
+        @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.min.js")
+    }
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <div class="w-75 mx-auto my-2">
+                Mê Truyện Chữ là nền tảng mở trực tuyến, miễn phí đọc truyện chữ được convert hoặc dịch kỹ lưỡng, do các converter và dịch giả đóng góp, rất nhiều truyện hay và nổi bật được cập nhật nhanh nhất với đủ các thể loại tiên hiệp, kiếm hiệp, huyền ảo ...
+            </div>
+            <a data-v-28717880="" href="/" class="d-inline-block py-1 my-2">
+                <img alt="logo" height="64" src="~/images/logo-domain.png">
+            </a>
+            <ul class="list-unstyled mt-2 mb-0 d-flex justify-content-center">
+                <li><a class="d-inline-block px-3 py-2">Điều khoản dịch vụ</a></li>
+                <li><a class="d-inline-block px-3 py-2">Chính sách bảo mật</a></li>
+                <li><a class="d-inline-block px-3 py-2">Về bản quyền</a></li>
+                <li><a class="d-inline-block px-3 py-2">Hướng dẫn sử dụng</a></li>
+                <li><a class="d-inline-block px-3 py-2">Liên hệ quảng cáo</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

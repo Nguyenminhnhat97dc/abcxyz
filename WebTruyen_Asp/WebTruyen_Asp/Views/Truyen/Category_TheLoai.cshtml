@@ -1,0 +1,6 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.Category_TheLoai>
+<li class="dropdown-item col-6 text-capitalize"><a href="@Url.Action("TheLoai","Truyen",new { MaTL=""})">Tất Cả</a></li>
+@foreach (var theloai in Model)
+{
+    <li class="dropdown-item col-6 text-capitalize"><a href="@Url.Action("TheLoai","Truyen",new { MaTL=@theloai.MaTL})">@theloai.TheLoai</a></li>
+}

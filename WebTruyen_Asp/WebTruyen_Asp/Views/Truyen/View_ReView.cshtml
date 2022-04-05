@@ -1,0 +1,21 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.View_Review>
+<ul class="list-unstyled mt-3 mb-4 border-top Ajax_BinhLuan">
+    @foreach (var binhluan in Model)
+    {
+        <li class="media py-3 border-bottom">
+            <div class="avatar mr-3"><img width="45" src="~/images/avatar/@binhluan.Avatar" alt=""></div>
+            <div class="media-body">
+                <div>@binhluan.TenNguoiDung</div>
+                <input style="display:none" id="input_2" value="@binhluan.Diem_Reivew ">
+                <span class="">
+                    <i class="fas fa-star" id="star_2"></i>
+                    <i class="fas fa-star" id="star_2"></i>
+                    <i class="fas fa-star" id="star_2"></i>
+                    <i class="fas fa-star" id="star_2"></i>
+                    <i class="fas fa-star" id="star_2"></i>
+                </span>
+                <div>@binhluan.NoiDungBinhLuan</div>
+            </div>
+        </li>
+    }
+</ul>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.Category_TheLoai>
+@foreach (var theloai in Model)
+{
+    <li id="">
+        @*@Ajax.ActionLink(theloai.TheLoai, "Ajax_category_theloai",
+            new { MaTL = theloai.MaTL },
+            new AjaxOptions
+            {
+                UpdateTargetId = "data-ajax-category-theloai", // <-- DOM element ID to update
+                InsertionMode = InsertionMode.Replace, // <-
+                HttpMethod = "GET",
+                OnSuccess = "áldasdsa",
+            }, new { @class = "Theloai-style" })*@
+        <a class="Theloai-style" href="@Url.Action("TheLoai","Truyen",new { MaTL=@theloai.MaTL})">@theloai.TheLoai</a>
+    </li>
+}
+
+
+

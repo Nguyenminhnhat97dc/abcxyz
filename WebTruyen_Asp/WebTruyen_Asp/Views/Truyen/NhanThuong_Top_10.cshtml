@@ -1,0 +1,20 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.ThinhHanh>
+@{ var stt = 3;}
+@foreach (var thongtin in Model)
+{
+    <li class="mt-1">
+        <div class="row">
+            <div class="index pt-2 col-2 text-center">
+                @(stt = stt +1)
+            </div>
+            <div class="media pt-2 align-items-center content pb-3 w-75">
+                <div class="media-body">
+                    <h2 class="m-0 fz-body font-weight-normal pr-3 text-overflow-1-lines">
+                        <a href="@Url.Action("ChiTietTruyen","Truyen",new { id =thongtin.MaTruyen })" class="d-block" style="text-decoration:none;color:#333">@thongtin.TenTruyen</a>
+                    </h2>
+                </div>
+                <span class="float-right text-success">@thongtin.NhanThuong</span>
+            </div>
+        </div>
+    </li>
+}

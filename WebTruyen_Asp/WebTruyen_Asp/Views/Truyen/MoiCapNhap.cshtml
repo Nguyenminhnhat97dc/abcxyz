@@ -1,0 +1,12 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.MoiCapNhapChuong>
+@foreach (var truyen in Model)
+{
+    <tr>
+        <td class="text-center"><a class="text-tertiary " href="">@truyen.TheLoai</a></td>
+        <td class="text-center"><a class="font-weight-bold-a text-overflow-1-lines " href="@Url.Action("ChiTietTruyen","Truyen",new {id=truyen.MaTruyen })">@truyen.TenTruyen</a></td>
+        <td><a class="text-overflow-chuong-lines pl-4 ml-4" href="@Url.Action("DocTruyen","Truyen",new { MaTruyen=truyen.MaTruyen, IdChuong= truyen.Chuong })">Chương @truyen.Chuong: @truyen.TieuDeChuong</a></td>
+        <td class="text-center">@truyen.TacGia</td>
+        <td class="text-tertiary text-center">@truyen.NguoiDang</td>
+        <td class="text-tertiary text-center">@truyen.ThoiGian</td>
+    </tr>
+}

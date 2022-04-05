@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Web_Truyen" Class="dbWeb_TruyenDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\NHAT;Initial Catalog=Web_Truyen;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Web_TruyenConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.view_theloai" Member="view_theloais">
+    <Type Name="view_theloai">
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenTruyen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TenTL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaTL" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="TenTG" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenFoder" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TongChuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BinhLuan" Member="BinhLuans">
+    <Type Name="BinhLuan">
+      <Column Name="MaBL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="DANGNHAP_BinhLuan" Member="DANGNHAP" ThisKey="MaDN" OtherKey="MaDN" Type="DANGNHAP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TRUYEN" Member="TRUYENs">
+    <Type Name="TRUYEN">
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTruyen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaTG" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TrangThai" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LuotXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayDang" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MaDN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaTL" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Association Name="TRUYEN_CAMXUC" Member="CAMXUCs" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="CAMXUC" />
+      <Association Name="TRUYEN_CHUONG" Member="CHUONGs" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="CHUONG" />
+      <Association Name="TRUYEN_DECU" Member="DECUs" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="DECU" />
+      <Association Name="TRUYEN_NHANTHUONG" Member="NHANTHUONGs" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="NHANTHUONG" />
+      <Association Name="TRUYEN_Rank_DeCu" Member="Rank_DeCus" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="Rank_DeCu" />
+      <Association Name="TRUYEN_THINHHANH" Member="THINHHANHs" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="THINHHANH" />
+      <Association Name="TRUYEN_TruyenDangDoc" Member="TruyenDangDocs" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TruyenDangDoc" />
+      <Association Name="DANGNHAP_TRUYEN" Member="DANGNHAP" ThisKey="MaDN" OtherKey="MaDN" Type="DANGNHAP" IsForeignKey="true" />
+      <Association Name="TACGIA_TRUYEN" Member="TACGIA" ThisKey="MaTG" OtherKey="MaTG" Type="TACGIA" IsForeignKey="true" />
+      <Association Name="THELOAI_TRUYEN" Member="THELOAI" ThisKey="MaTL" OtherKey="MaTL" Type="THELOAI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAMXUC" Member="CAMXUCs">
+    <Type Name="CAMXUC">
+      <Column Name="MaCX" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tim" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Thich" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Haha" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Buon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gian" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TRUYEN_CAMXUC" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHUONG" Member="CHUONGs">
+    <Type Name="CHUONG">
+      <Column Name="MaChuong" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdChuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenChuong" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="MaDN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayDang" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LuotXemChuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenFoder" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="TRUYEN_CHUONG" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+      <Association Name="DANGNHAP_CHUONG" Member="DANGNHAP" ThisKey="MaDN" OtherKey="MaDN" Type="DANGNHAP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DANGNHAP" Member="DANGNHAPs">
+    <Type Name="DANGNHAP">
+      <Column Name="MaDN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDangNhap" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="avatar" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DANGNHAP_BinhLuan" Member="BinhLuans" ThisKey="MaDN" OtherKey="MaDN" Type="BinhLuan" />
+      <Association Name="DANGNHAP_TRUYEN" Member="TRUYENs" ThisKey="MaDN" OtherKey="MaDN" Type="TRUYEN" />
+      <Association Name="DANGNHAP_CHUONG" Member="CHUONGs" ThisKey="MaDN" OtherKey="MaDN" Type="CHUONG" />
+      <Association Name="DANGNHAP_Review" Member="Reviews" ThisKey="MaDN" OtherKey="MaDN" Type="Review" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DECU" Member="DECUs">
+    <Type Name="DECU">
+      <Column Name="MaDC" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiemDeCu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TRUYEN_DECU" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANTHUONG" Member="NHANTHUONGs">
+    <Type Name="NHANTHUONG">
+      <Column Name="MaNT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiemNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TRUYEN_NHANTHUONG" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rank_DeCu" Member="Rank_DeCus">
+    <Type Name="Rank_DeCu">
+      <Column Name="MaNT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiemDC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TRUYEN_Rank_DeCu" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Review" Member="Reviews">
+    <Type Name="Review">
+      <Column Name="MaRV" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaDN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TinhCachNhanVat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CotTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BoCucTheGioi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DANGNHAP_Review" Member="DANGNHAP" ThisKey="MaDN" OtherKey="MaDN" Type="DANGNHAP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TACGIA" Member="TACGIAs">
+    <Type Name="TACGIA">
+      <Column Name="MaTG" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTG" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TieuSu" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="TACGIA_TRUYEN" Member="TRUYENs" ThisKey="MaTG" OtherKey="MaTG" Type="TRUYEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THELOAI" Member="THELOAIs">
+    <Type Name="THELOAI">
+      <Column Name="MaTL" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="THELOAI_TRUYEN" Member="TRUYENs" ThisKey="MaTL" OtherKey="MaTL" Type="TRUYEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THINHHANH" Member="THINHHANHs">
+    <Type Name="THINHHANH">
+      <Column Name="MaTH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiemTH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TRUYEN_THINHHANH" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TruyenDangDoc" Member="TruyenDangDocs">
+    <Type Name="TruyenDangDoc">
+      <Column Name="MATDC" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTruyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdChuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TRUYEN_TruyenDangDoc" Member="TRUYEN" ThisKey="MaTruyen" OtherKey="MaTruyen" Type="TRUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

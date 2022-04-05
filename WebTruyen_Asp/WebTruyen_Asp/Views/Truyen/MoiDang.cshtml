@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.MoiDang>
+<div class="slider-2">
+    @foreach (var truyen in Model)
+    {
+        <section>
+            <div class="text-center">
+                <img src="~/images/img_truyen/@truyen.AnhBia" style="box-shadow: 5px 5px 5px gray;">
+                <div class="font-weight-semibold py-1 pt-2 mt-2">@truyen.TenTruyen</div>
+                <div class="py-4 text-overflow-2-lines">
+                    @{
+                        var dataFile = Server.MapPath("~/Data_ChuongTruyen/" + truyen.TenFoder + "/GioiThieu");
+                        Array userData = File.ReadAllLines(dataFile);
+                        Layout = null;
+                    }
+                    @foreach (string dataLine in userData)
+                    {
+                        foreach (string dataItem in dataLine.Split('`'))
+                        {@dataItem <text>&nbsp;</text>}
+                    <br />
+                }
+                </div>
+                <div class="py-1 mt-2"> <a class="type-story" href="#">@truyen.TheLoai</a></div>
+                <a href="@Url.Action("ChiTietTruyen","Truyen",new { id=truyen.MaTruyen })" class="btn btn-danger  round-2 mt-3">Đọc Ngay</a>
+            </div>
+        </section>
+    }
+</div>

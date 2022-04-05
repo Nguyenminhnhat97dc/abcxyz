@@ -1,0 +1,162 @@
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebTruyen_Asp.dll.config
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebTruyen_Asp.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebTruyen_Asp.pdb
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csc.exe
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csc.exe.config
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csc.rsp
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csi.exe
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csi.exe.config
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csi.rsp
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.AppContext.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Console.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.Compression.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Net.Http.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.ValueTuple.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\vbc.exe
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\vbc.exe.config
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\vbc.rsp
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\VBCSCompiler.exe
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Antlr3.Runtime.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Newtonsoft.Json.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Helpers.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Mvc.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Optimization.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Razor.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Razor.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebGrease.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Helpers.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Mvc.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Optimization.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Razor.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Razor.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Newtonsoft.Json.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Antlr3.Runtime.pdb
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.csprojAssemblyReference.cache
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.csproj.CopyComplete
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.pdb
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebTruyen_Asp.dll.config
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebTruyen_Asp.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebTruyen_Asp.pdb
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csc.exe
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csc.exe.config
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csc.rsp
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csi.exe
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csi.exe.config
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\csi.rsp
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.AppContext.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Console.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Net.Http.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\vbc.exe
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\vbc.exe.config
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\vbc.rsp
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Antlr3.Runtime.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Newtonsoft.Json.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Helpers.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Mvc.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Optimization.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Razor.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\WebGrease.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Helpers.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Mvc.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Optimization.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.Razor.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Newtonsoft.Json.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Antlr3.Runtime.pdb
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.csprojAssemblyReference.cache
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.csproj.CoreCompileInputs.cache
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.csproj.CopyComplete
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.dll
+C:\Users\Nhat\Desktop\Bài tập\laptrinhweb_2\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\obj\Debug\WebTruyen_Asp.pdb
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\PagedList.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\PagedList.Mvc.dll
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\PagedList.xml
+C:\Users\nguye\Desktop\BaiTap\DoAn_Web2\WebTruyen_Asp\WebTruyen_Asp\bin\PagedList.Mvc.xml

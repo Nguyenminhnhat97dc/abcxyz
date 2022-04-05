@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C56D8519-3E17-47B8-9D69-AC9DA2CEBD19}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebTruyen_Asp</RootNamespace>
+    <AssemblyName>WebTruyen_Asp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44379</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Class\BTV_Decu.cs" />
+    <Compile Include="Class\Category_TheLoai.cs" />
+    <Compile Include="Class\ChiTietTruyen.cs" />
+    <Compile Include="Class\Chuong.cs" />
+    <Compile Include="Class\DocTruyen.cs" />
+    <Compile Include="Class\MoiCapNhapChuong.cs" />
+    <Compile Include="Class\MoiDang.cs" />
+    <Compile Include="Class\MoiHoanThanh.cs" />
+    <Compile Include="Class\NguoiDang.cs" />
+    <Compile Include="Class\NguoiDang_Truyen.cs" />
+    <Compile Include="Class\Review_All.cs" />
+    <Compile Include="Class\TheLoai.cs" />
+    <Compile Include="Class\ThinhHanh.cs" />
+    <Compile Include="Class\TruyenDangDoc_class.cs" />
+    <Compile Include="Class\View_Review.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NguoiDungController.cs" />
+    <Compile Include="Controllers\TruyenController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbWeb_Truyen.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbWeb_Truyen.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\all.css" />
+    <Content Include="Content\css\bootstrap4-1-3.min.css" />
+    <Content Include="Content\css\Doctruyen.css" />
+    <Content Include="Content\css\login_css.css" />
+    <Content Include="Content\css\Nav.css" />
+    <Content Include="Content\js\abc.js" />
+    <Content Include="Content\js\ChiTietTruyen.js" />
+    <Content Include="Content\js\DocTruyen.js" />
+    <Content Include="Content\js\JavaScript.js" />
+    <Content Include="Content\js\jquery.hislide.js" />
+    <Content Include="Content\js\Theloai.js" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Data_ChuongTruyen\test_1.txt" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\Angry.png" />
+    <Content Include="images\avatar\test_1.jpg" />
+    <Content Include="images\flower-icon.png" />
+    <Content Include="images\Haha.png" />
+    <Content Include="images\Heart.png" />
+    <Content Include="images\home-bg.jpg" />
+    <Content Include="images\img_truyen\cho_moi_tieu_su_thuc.jpg" />
+    <Content Include="images\img_truyen\chu_thien_chi_sat_khi_hao_hung.jpg" />
+    <Content Include="images\img_truyen\dai_chua_te.jpg" />
+    <Content Include="images\img_truyen\dan_vo_than_ton.jpg" />
+    <Content Include="images\img_truyen\day_la_tinh_cau_cua_ta.jpg" />
+    <Content Include="images\img_truyen\de_ba.jpg" />
+    <Content Include="images\img_truyen\de_che_dai_viet.jpg" />
+    <Content Include="images\img_truyen\dinh_luyen_than_ma.jpg" />
+    <Content Include="images\img_truyen\flower-icon.png" />
+    <Content Include="images\img_truyen\gamer_xung_ba_di_gioi.jpg" />
+    <Content Include="images\img_truyen\home-bg.jpg" />
+    <Content Include="images\img_truyen\huyen_luc.jpg" />
+    <Content Include="images\img_truyen\phong_than_ky.jpg" />
+    <Content Include="images\img_truyen\ta_cao_hon_troi.jpg" />
+    <Content Include="images\img_truyen\ta_co_the_vo_han_doi_he_thong.jpg" />
+    <Content Include="images\img_truyen\ta_he_chua_tri_tro_choi.jpg" />
+    <Content Include="images\img_truyen\ta_muon_lam_thien_dao.jpg" />
+    <Content Include="images\img_truyen\ta_o_huyen_vu_tren_lung_xay_gia_vien.jpg" />
+    <Content Include="images\img_truyen\the_gioi_duy_nhat_phap_su.jpg" />
+    <Content Include="images\img_truyen\tien_luc.jpg" />
+    <Content Include="images\img_truyen\tinh_te_tu_chan_hang_ngay.jpg" />
+    <Content Include="images\img_truyen\toan_chuc_phap_su.jpg" />
+    <Content Include="images\img_truyen\toi_cuong_he_thong_de_hoang.jpg" />
+    <Content Include="images\img_truyen\ton_hau_la_su_de_ta.jpg" />
+    <Content Include="images\img_truyen\van_co_de_nhat_than_nhan.jpg" />
+    <Content Include="images\img_truyen\van_co_than_de.jpg" />
+    <Content Include="images\img_truyen\van_toc_chi_kiep.jpg" />
+    <Content Include="images\img_truyen\vo_dich_that_tich_mich.jpg" />
+    <Content Include="images\img_truyen\vu_luyen_dien_phong.jpg" />
+    <Content Include="images\img_truyen\yeu_long_co_de.jpg" />
+    <Content Include="images\Like.png" />
+    <Content Include="images\login-register.jpg" />
+    <Content Include="images\logo-domain.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\medal-2.png" />
+    <Content Include="images\medal-3.png" />
+    <Content Include="images\medal.png" />
+    <Content Include="images\number-4.jpg" />
+    <Content Include="images\present.png" />
+    <Content Include="images\Sad.png" />
+    <Content Include="images\trend.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Models\dbWeb_Truyen.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbWeb_Truyen.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\1" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\10" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\11" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\12" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\13" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\14" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\2" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\3" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\4" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\5" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\6" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\7" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\8" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\9" />
+    <Content Include="Data_ChuongTruyen\Cho_Moi_Tieu_Su_Thuc\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\1" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\10" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\11" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\12" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\13" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\14" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\15" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\2" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\3" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\4" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\5" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\6" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\7" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\8" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\9" />
+    <Content Include="Data_ChuongTruyen\Chu_Thien_Chi_Sat_Khi_Hao_Hung\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\1" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\10" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\11" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\12" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\13" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\14" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\15" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\2" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\3" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\4" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\5" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\6" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\7" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\8" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\9" />
+    <Content Include="Data_ChuongTruyen\Dai_Chua_Te\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\1" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\10" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\11" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\12" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\13" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\14" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\15" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\2" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\3" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\4" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\5" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\6" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\7" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\8" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\9" />
+    <Content Include="Data_ChuongTruyen\Day_La_Tinh_Cau_Cua_Ta\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\De_Ba\1" />
+    <Content Include="Data_ChuongTruyen\De_Ba\10" />
+    <Content Include="Data_ChuongTruyen\De_Ba\11" />
+    <Content Include="Data_ChuongTruyen\De_Ba\12" />
+    <Content Include="Data_ChuongTruyen\De_Ba\13" />
+    <Content Include="Data_ChuongTruyen\De_Ba\14" />
+    <Content Include="Data_ChuongTruyen\De_Ba\15" />
+    <Content Include="Data_ChuongTruyen\De_Ba\2" />
+    <Content Include="Data_ChuongTruyen\De_Ba\3" />
+    <Content Include="Data_ChuongTruyen\De_Ba\4" />
+    <Content Include="Data_ChuongTruyen\De_Ba\5" />
+    <Content Include="Data_ChuongTruyen\De_Ba\6" />
+    <Content Include="Data_ChuongTruyen\De_Ba\7" />
+    <Content Include="Data_ChuongTruyen\De_Ba\8" />
+    <Content Include="Data_ChuongTruyen\De_Ba\9" />
+    <Content Include="Data_ChuongTruyen\De_Ba\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\1" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\10" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\11" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\12" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\13" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\14" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\15" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\2" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\3" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\4" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\5" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\6" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\7" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\8" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\9" />
+    <Content Include="Data_ChuongTruyen\Phong_Than_Ky\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\1" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\10" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\11" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\12" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\13" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\14" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\15" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\2" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\3" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\4" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\5" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\6" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\7" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\8" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\9" />
+    <Content Include="Data_ChuongTruyen\Ta_Cao_Hon_Troi\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\1" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\10" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\11" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\12" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\13" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\14" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\15" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\2" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\3" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\4" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\5" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\6" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\7" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\8" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\9" />
+    <Content Include="Data_ChuongTruyen\Ta_He_Chua_Tri_Cho_Choi\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\1" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\10" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\11" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\12" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\13" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\14" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\15" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\2" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\3" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\4" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\5" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\6" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\7" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\8" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\9" />
+    <Content Include="Data_ChuongTruyen\The_Gioi_Duy_Nhat_Phap_Su\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\1" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\10" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\11" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\12" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\13" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\14" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\15" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\2" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\3" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\4" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\5" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\6" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\7" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\8" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\9" />
+    <Content Include="Data_ChuongTruyen\Tien_Luc\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\1" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\10" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\11" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\12" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\13" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\14" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\15" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\2" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\3" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\4" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\5" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\6" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\7" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\8" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\9" />
+    <Content Include="Data_ChuongTruyen\Tinh_Te_Tu_Chan_Hang_Ngay\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\1" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\10" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\11" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\12" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\13" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\14" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\15" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\2" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\3" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\4" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\5" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\6" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\7" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\8" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\9" />
+    <Content Include="Data_ChuongTruyen\Toi_Cuong_He_Thong_De_Hoang\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\1" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\10" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\11" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\12" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\13" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\14" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\15" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\2" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\3" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\4" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\5" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\6" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\7" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\8" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\9" />
+    <Content Include="Data_ChuongTruyen\Ton_Hau_La_Su_De_Ta\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\1" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\10" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\11" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\12" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\13" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\14" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\15" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\2" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\3" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\4" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\5" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\6" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\7" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\8" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\9" />
+    <Content Include="Data_ChuongTruyen\Van_Co_De_Nhat_Than_Nhan\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\1" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\10" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\11" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\12" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\13" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\14" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\15" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\2" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\3" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\4" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\5" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\6" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\7" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\8" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\9" />
+    <Content Include="Data_ChuongTruyen\Van_Toc_Chi_Kiep\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\1" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\10" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\11" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\12" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\13" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\14" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\15" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\2" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\3" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\4" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\5" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\6" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\7" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\8" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\9" />
+    <Content Include="Data_ChuongTruyen\Vo_Dich_That_Tich_Mich\GioiThieu" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\1" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\10" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\11" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\12" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\13" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\14" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\15" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\2" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\3" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\4" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\5" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\6" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\7" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\8" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\9" />
+    <Content Include="Data_ChuongTruyen\Yeu_Long_Co_De\GioiThieu" />
+    <None Include="Models\dbWeb_Truyen.dbml.layout">
+      <DependentUpon>dbWeb_Truyen.dbml</DependentUpon>
+    </None>
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutMaster.cshtml" />
+    <Content Include="Views\WebTruyen\Index.cshtml" />
+    <Content Include="Views\Truyen\Index.cshtml" />
+    <Content Include="Views\Truyen\MoiCapNhap.cshtml" />
+    <Content Include="Views\Truyen\MoiHoanThanh.cshtml" />
+    <Content Include="Views\Truyen\ChiTietTruyen.cshtml" />
+    <Content Include="Views\NguoiDung\DangNhap.cshtml" />
+    <Content Include="Views\NguoiDung\_LayoutDangNhap.cshtml" />
+    <Content Include="Views\NguoiDung\DangKy.cshtml" />
+    <Content Include="Views\Truyen\NguoiDang.cshtml" />
+    <Content Include="Views\Truyen\SliderShow_Master2.cshtml" />
+    <Content Include="Views\Truyen\View_ReView.cshtml" />
+    <Content Include="Views\Truyen\View_ReView_2.cshtml" />
+    <Content Include="Views\Truyen\DanhSachChuong.cshtml" />
+    <Content Include="Views\Truyen\GioiThieu.cshtml" />
+    <Content Include="Views\Truyen\BinhLuan.cshtml" />
+    <Content Include="Views\Truyen\DocTruyen.cshtml" />
+    <Content Include="Views\Truyen\MoiDang.cshtml" />
+    <Content Include="Views\Truyen\ThinhHanh.cshtml" />
+    <Content Include="Views\Truyen\NhanThuong_Top.cshtml" />
+    <Content Include="Views\Truyen\NhanThuong_Top_2.cshtml" />
+    <Content Include="Views\Truyen\NhanThuong_Top_3.cshtml" />
+    <Content Include="Views\Truyen\NhanThuong_Top_10.cshtml" />
+    <Content Include="Views\Truyen\ThinhHanh_Top.cshtml" />
+    <Content Include="Views\Truyen\ThinhHanh_Top_2.cshtml" />
+    <Content Include="Views\Truyen\ThinhHanh_Top_3.cshtml" />
+    <Content Include="Views\Truyen\ThinhHanh_Top_10.cshtml" />
+    <Content Include="Views\Truyen\DeCu_Top.cshtml" />
+    <Content Include="Views\Truyen\DeCu_Top_2.cshtml" />
+    <Content Include="Views\Truyen\DeCu_Top_3.cshtml" />
+    <Content Include="Views\Truyen\DeCu_Top_10.cshtml" />
+    <Content Include="Views\Truyen\ThatBai.cshtml" />
+    <Content Include="Views\Truyen\Category_TheLoai.cshtml" />
+    <Content Include="Views\Truyen\Category_TheLoai_2.cshtml" />
+    <Content Include="Views\Truyen\Ajax_category_theloai.cshtml" />
+    <Content Include="Views\Truyen\TheLoai.cshtml" />
+    <Content Include="Views\Truyen\TruyenDangDoc.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59849</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

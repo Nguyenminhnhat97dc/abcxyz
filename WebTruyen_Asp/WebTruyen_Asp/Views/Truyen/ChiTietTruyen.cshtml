@@ -1,0 +1,406 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietTruyen";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+<style>
+    .rounded-3 {
+        border-radius: 1rem;
+    }
+
+    .bg-yellow-white {
+        background-color: #f7f5f0 !important;
+    }
+
+    .avatar img {
+        position: relative;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .mx-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    ul li a:hover {
+        color: #fff !important;
+    }
+
+    .btn-danger:hover {
+        color: #fff;
+        background-color: #9f251e;
+        border-color: #94221c;
+    }
+
+    .btn-code {
+        text-decoration: none;
+        list-style: none;
+        color: #b78a28;
+        border: 2px solid #b78a28;
+    }
+
+        .btn-code:hover {
+            color: #785b1a !important;
+        }
+
+    .fz-18 {
+        font-size: 18px;
+    }
+
+    ul li .nav-link {
+        color: #333 !important;
+    }
+
+        ul li .nav-link:hover {
+            color: #785b1a !important;
+        }
+
+    ul li a.active {
+        color: #785b1a !important;
+    }
+
+    .introduce {
+        min-height: 300px;
+    }
+
+    .svg-icon {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: inline-block;
+    }
+
+    .icon-react-love {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-image: url(../../images/Heart.png);
+    }
+
+    .icon-react-like {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-image: url(../../images/Like.png);
+    }
+
+    .icon-react-laught {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-image: url(../../images/Haha.png);
+    }
+
+    .icon-react-angry {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-image: url(../../images/Angry.png);
+    }
+
+    .icon-react-sad {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-image: url(../../images/Sad.png);
+    }
+
+    .review-form {
+        border: 2px solid #f7f5f0;
+    }
+
+    .range {
+        display: grid;
+    }
+
+    .range .field {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+
+    .range .field input {
+        -webkit-appearance: none;
+         height: 4px;
+         width: 100%;
+         background: rgba(183, 138, 40, .2);
+         border-radius: 5px;
+    }
+
+                .range .field input::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    height: 24px;
+                    width: 24px;
+                    background: #b78a28;
+                    border-radius: 50%;
+                    border: 1px solid #b78a28;
+                    cursor: pointer;
+                    transition: all 1s;
+                }
+
+    .fz-13 {
+        font-size: 13px !important;
+    }
+
+    .text-like {
+        color: #b78a28 !important;
+    }
+
+    .review-input-block {
+        border-top: 1px solid #f7f5f0;
+        position: relative;
+    }
+
+    .review-input-block .form-control {
+        min-height: 100px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .review-input-block .btn-submit {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+</style>
+<main>
+    <div class="container Productresult">
+        <div>&ensp;</div>
+        <div class="page-content px-3 py-3 mt-3">
+            <div class="media col-12">
+                <img src="~/images/img_truyen/@Model.HinhAnh" width="210" height="280">
+                <div class="media-body px-3">
+                    <h3>
+                        <a class="a-no-style" href="#">@Model.TenTruyen</a>
+                    </h3>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-inline-block border border-secondary px-3 py-1 text-secondary rounded-3 mr-2 mb-2">@Model.TacGia</li>
+                        <li class="d-inline-block border border-danger px-3 py-1 text-danger rounded-3 mr-2 mb-2">@Model.TrangThai</li>
+                        <li class="d-inline-block border border-primary px-3 py-1 text-primary rounded-3 mr-2 mb-2"><a href="/truyen?genre=3" class="text-primary">@Model.TheLoai</a></li>
+                    </ul>
+                    <ul class="list-unstyled d-flex mb-4">
+                        <li class="mr-5">
+                            <div class="h5 mb-1 text-center">@Model.TongChuong</div>
+                            <div>Chương</div>
+                        </li>
+                        <li class="mr-5">
+                            <div class="h5 mb-1 text-center">14</div>
+                            <div>Chương/tuần</div>
+                        </li>
+                        <li class="mr-5">
+                            <div class="h5 mb-1 text-center">781.2K</div>
+                            <div>Lượt đọc</div>
+                        </li>
+                        <li class="mr-5">
+                            <div id="bookmarkedValue" class="h5 mb-1 text-center">1177</div>
+                            <div>Cất giữ</div>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center mb-4">
+                       <input style="display:none" value="@Math.Round(Model.Diem_ReView)" id="input_1" />
+                        <span id="nh-rating">
+                            <i class="fas fa-star" id="star_1"></i>
+                            <i class="fas fa-star" id="star_1"></i>
+                            <i class="fas fa-star" id="star_1"></i>
+                            <i class="fas fa-star" id="star_1"></i>
+                            <i class="fas fa-star" id="star_1"></i>
+                        </span>
+                        <span class="d-inline-block ml-2">
+                            <span class="font-weight-semibold" id="value-rating">@Model.Diem_ReView</span>/5
+                        </span>
+                        <span class="d-inline-block text-secondary ml-1">(44 đánh giá)</span>
+                    </div>
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li class="mr-3 w-20">
+                            <a href="@Url.Action("DocTruyen","Truyen",new { MaTruyen=Model.MaTruyen, IdChuong=1 })" class="btn btn-danger rounded-3" style="color:white; font-size:18px;"><i class="fas fa-glasses"></i>&ensp;Đọc Truyện</a>
+                        </li>
+                        <li class="mr-3 w-20">
+                            <a href="#" class="btn btn-outline-secondary rounded-3 fz-18"><i class="far fa-bookmark"></i>&nbsp;&nbsp;Đánh Dấu</a>
+                        </li>
+                        <li class="mr-3 w-20">
+                            <a href="#" class="btn btn-code rounded-3 fz-18 line-heigth align-items-center justify-content-center" style="background-color:rgb(247, 245,240)"><i class=" align-items-center "><img src="~/images/flower-icon.png" width="20 " height="14 "></i>&nbsp;&nbsp;Đề Cử</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <br>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs h5 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#introduce">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#review">Đánh Giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#list-chapter">Ds Chương</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#conmment">Bình Luận</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#fan">Hâm Mộ</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="introduce" class="container tab-pane active">
+                        <br>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="px-3 py-3 introduce">
+                                    <p>
+                                        "Giả thuyết hiện thực trò chơi" " Tinh Linh Quốc độ " bên trong nhân khí tối cao NPC, Thế Giới Thụ hóa thân, Tự Nhiên Chi Mẫu, Sinh Mạng Nữ Thần, tinh linh chúa tể ——<br><br>Eve. Yggdrasill ngồi cao tại chính mình
+                                        trên thần tọa, mỉm cười mà nhìn dưới đài các người chơi:<br><br>"Hoan nghênh đi đến kiếm cùng ma pháp thế giới."<br><br>Đây là một cái trọng sinh thành chân thần kẻ xuyên việt mang theo đệ tứ thiên tai tại thế
+                                        giới khác cùng chung chế cuộc sống tốt đẹp chuyện xưa (giống thật)...<br><br>PS: Không DND, phía sau màn người chơi lưu, vai chính độc thân, Group số thấy bình luận khu bố trí đỉnh thiếp
+                                    </p>
+                                </div>
+                                <table class="table table-striped border-bottom mb-4 mt-5 text-capitalize">
+                                    <tbody>
+                                        <tr class="align-middle">
+                                            <td class="align-middle font-weight-semibold" style="width:130px;">Cảm Xúc</td>
+                                            <td class="align-middle">
+                                                <ul class="list-unstyled m-0 d-flex flex-warp">
+                                                    <li class="d-flex align-items-center mr-4">
+                                                        <i class="svg-icon icon-react-love mr-2"></i>2739
+                                                    </li>
+                                                    <li class="d-flex align-items-center mr-4">
+                                                        <i class="svg-icon icon-react-like mr-2"></i>2739
+                                                    </li>
+                                                    <li class="d-flex align-items-center mr-4">
+                                                        <i class="svg-icon icon-react-laught mr-2"></i>2739
+                                                    </li>
+                                                    <li class="d-flex align-items-center mr-4">
+                                                        <i class="svg-icon icon-react-sad mr-2"></i>2739
+                                                    </li>
+                                                    <li class="d-flex align-items-center mr-4">
+                                                        <i class="svg-icon icon-react-angry mr-2"></i>2739
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr class="align-middle">
+                                            <td class="align-middle font-weight-semibold" style="width:130px;">Đề Cử</td>
+                                            <td class="align-middle float-right">Xếp Hạng</td>
+                                        </tr>
+                                        <tr class="align-middle">
+                                            <td class="align-middle font-weight-semibold" style="width:130px;">Chương Mới</td>
+                                            <td class="align-middle float-left">Chương 321: ádasdkjshadjkashdjksa</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-4" >
+                                <div class="mb-4 bg-yellow-white p-4" style="height: 700px;border-radius:10px; box-shadow:0px 0px 10px 3px #785b1a">
+                                    @Html.Action("NguoiDang", "Truyen", new { id = Model.MaNguoDang })
+                                    <hr>
+                                    <div class="slidershows-master2">
+                                        <div class="slider-2-master2">
+                                            @Html.Action("SliderShow_Master2", "Truyen", new { id = Model.MaNguoDang })
+                                        </div>
+                                        <div class="controls">
+                                            <span class="arrow prev"><i class="fas fa-arrow-left"></i></span>
+                                            <span class="arrow next"><i class="fas fa-arrow-right"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="review" class="container tab-pane">
+                        <br>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="bg-yellow-white review-form rounded-2 mb-3 px-3 text-like">
+                                    @using (Html.BeginForm("ReView", "Truyen"))
+                                    {
+                                        @Html.ValidationSummary(true)
+                                        <div class="row align-middle font-weight-bold justify-content-center">
+
+                                            <div class="col-3 font-weight-semibold py-3 fz-14">Tính Cách Nhân Vật</div>
+                                            <div class="range col-8 py-4 mt-1">
+                                                <div class="field">
+                                                    <input class="input-Review-1" type="range" max="100" min="0" value="0" step="1" name="TinhCach">
+                                                </div>
+                                            </div>
+                                            <div class="col-1 text-center py-3 value-range-1">0</div>
+                                        </div>
+                                        <div class="row align-center font-weight-bold">
+                                            <div class="col-3 font-weight-semibold py-3 fz-13">Nội Dung Cốt Truyện</div>
+                                            <div class="range col-8 py-4 mt-1">
+                                                <div class="field">
+                                                    <input class="input-Review-2" type="range" max="100" min="0" value="0" step="1" name="CotTruyen">
+                                                </div>
+                                            </div>
+                                            <div class="col-1 text-center py-3 value-range-2">0</div>
+                                        </div>
+                                        <div class="row align-center font-weight-bold">
+                                            <div class="col-3 font-weight-semibold py-3 fz-13">Bố cục thế giới</div>
+                                            <div class="range col-8 py-4 mt-1">
+                                                <div class="field">
+                                                    <input class="input-Review-3" type="range" max="100" min="0" value="0" step="1" name="BoCuc">
+                                                </div>
+                                            </div>
+                                            <div class="col-1 text-center py-3 value-range-3">0</div>
+                                        </div>
+                                        <!-- Review Area -->
+                                        <div class="review-input-block">
+
+                                            <input style="display:none" type="text" name="User" value="@Session["TaiKhoan"]" />
+                                            <input style="display:none" type="text" name="MaTruyen" value="@Model.MaTruyen" />
+                                            <textarea name="BinhLuan" placeholder="Đánh giá của bạn về truyện này" class="form-control rounded-2 border-0 p-3"></textarea>
+                                            <button type="submit" class="btn btn-submit bg-primary p-0 rounded-circle d-flex align-items-center justify-content-center text-white">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    }
+                                    <!--End of Review Area -->
+                                    <!-- Review -->
+                                    <!-- End of Review -->
+                                    @Html.Action("View_ReView", "Truyen", new { MaTruyen = Model.MaTruyen, MaUSer = Model.MaNguoDang })
+                                </div>
+                            </div>
+                            @Html.Action("View_ReView_2", "Truyen", new { id = Model.MaTruyen })
+                        </div>
+                    </div>
+
+                    <div id="list-chapter" class="container tab-pane fade">
+                        <br>
+                        <h6>Danh Sách Chương</h6>
+                        @Html.Action("DanhSachChuong", "Truyen", new { id = Model.MaTruyen })
+                    </div>
+                    <div id="conmment" class="container tab-pane fade">
+                        <br>
+                        <div class="col-8">
+                            <div class="container" style="margin-left:20%">
+                                @using (Html.BeginForm("BinhLuan_Submid","Truyen"))
+                                {
+                                    @Html.ValidationSummary(true)
+                                    <div class="review-input-block">
+
+                                        <input style="display:none" type="text" name="User" value="@Session["TaiKhoan"]" />
+                                        <input style="display:none" type="text" name="MaTruyen" value="@Model.MaTruyen" />
+                                        <textarea name="BinhLuan" placeholder="Bình Luận Của Bạn Về Truyện" class="form-control rounded-2 border-0 p-3"></textarea>
+                                        <button type="submit" class="btn btn-submit bg-primary p-0 rounded-circle d-flex align-items-center justify-content-center text-white">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                }
+                                @Html.Action("BinhLuan", "Truyen", new { MaTruyen = Model.MaTruyen, MaUSer = Model.MaNguoDang })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="fan" class="container tab-pane fade">
+                        <br>
+                        <h3>fan</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="~/Content/js/ChiTietTruyen.js"></script>

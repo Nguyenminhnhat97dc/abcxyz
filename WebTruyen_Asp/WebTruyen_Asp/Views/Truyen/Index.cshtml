@@ -1,0 +1,270 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.BTV_Decu>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+<main>
+    <section>
+        <div class="container">
+            <div class="row pt-4 ">
+                <div class="page-content col-8 ">
+                    <h5 class="Title mb-2 mt-1 py-2">Biên Tập Viên Đề Cử</h5>
+                    <div class="row px-1">
+                        @foreach (var truyen in Model)
+                        {
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <a href="@Url.Action("ChiTietTruyen","Truyen",new {id=truyen.MaTruyen })"><img src="~/images/img_truyen/@truyen.AnhBia" width="85" height="110" style="box-shadow: 5px 5px 5px grey; "/></a>
+                                    <div class="media-body px-3">
+                                        <a class="a-no-style" href="@Url.Action("ChiTietTruyen","Truyen",new {id=truyen.MaTruyen })"><h4>@truyen.TenTruyen</h4></a>
+                                        <div class="text-overflow-2-lines">
+                                            @{
+                                                StreamReader sr = File.OpenText(Server.MapPath("~/Data_ChuongTruyen/" + truyen.TenFoder + "/GioiThieu"));
+                                                string strContents = sr.ReadToEnd();
+                                            }
+                                            @strContents                                               
+                                            <br />
+                                        }
+                                        </div>
+                                        <div class="align-items-center mt-2 py-1 ">
+                                            <div class="float-left"><i class="fas fa-user-tie text-secondary"></i>&nbsp;&nbsp;@truyen.TenND</div>
+                                            <a class="type-story float-right text-capitalize" href="#">@truyen.TheLoai</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="col-12" />
+                            </div>
+                        }
+                    </div>
+                </div>
+                <!--    @* --------------------Bạn Đang Đọc ---------------------------------- *@ -->
+            <div class="page-content col-md-4">
+                <h5 class="Title mb-2 mt-1 py-2">Đang Đọc</h5>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <div class="media mb-3">
+                    <div class="shine shine-bg"></div>
+                    <div class="media-body px-2">
+                        <div class="shine-line shine-bg"></div>
+                        <div class="shine-line shine-bg"></div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            </div>
+            <!--  @* ---------------------------Mới Cập nhập nhập---------------------------- *@ -->
+            <h5 class="Title mb-2 mt-1">Mới Cập Nhập</h5>
+            <table class="table table-striped  text-capitalize">
+                <thead class="thead-light text-center">
+                    <tr>
+                        <th scope="col">Thể Loại</th>
+                        <th scope="col">Tên Truyện</th>
+                        <th scope="col">Chương</th>
+                        <th scope="col">Tác Giả</th>
+                        <th scope="col">Người Đăng</th>
+                        <th scope="col">Thời Gian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @Html.Action("MoiCapNhap", "Truyen")
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!--   @* ------------------------- Xếp Hạng----------------------------------- *@ -->
+    <section>
+        <div class="container">
+            <div class="Main-Ranking py-4 ml-0">
+                <div class="row">
+                    <div class="col-4">
+                        <section class="abc rounded-2 px-4 pt-3 pb-2">
+                            <h5 class="d-flex align-items-center py-1">Top Nhận Thưởng</h5>
+                            <ul class="list-unstyled list-ranking m-0">
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class="index col-2 py-2">
+                                            <img src="~/images/medal.png" width="40" height="40" />
+                                        </div>
+                                        <div class="media w-75 align-items-center content pb-3">
+                                            @Html.Action("NhanThuong_Top", "Truyen")
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class="index col-2 pt-1">
+                                            <img src="~/images/medal-2.png" width="30" height="30" />
+                                        </div>
+                                        @Html.Action("NhanThuong_Top_2", "Truyen")
+                                    </div>
+                                </li>
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class=" =index col-2 pt-1">
+                                            <img src="~/images/medal-3.png" width="30" height="30" />
+                                        </div>
+                                        @Html.Action("NhanThuong_Top_3", "Truyen")
+                                    </div>
+                                </li>
+                                @Html.Action("NhanThuong_Top_10", "Truyen")
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section class="abc rounded-2 px-4 pt-3 pb-2">
+                            <h5 class="d-flex align-items-center py-1">Top Thịnh Hành</h5>
+                            <ul class="list-unstyled list-ranking m-0">
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class="index col-2 py-2">
+                                            <img src="~/images/medal.png" width="40" height="40" />
+                                        </div>
+                                        <div class="media w-75 align-items-center content pb-3">
+                                            @Html.Action("ThinhHanh_Top", "Truyen")
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class="index col-2 pt-1">
+                                            <img src="~/images/medal-2.png" width="30" height="30" />
+                                        </div>
+                                        @Html.Action("ThinhHanh_Top_2", "Truyen")
+                                    </div>
+                                </li>
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class=" =index col-2 pt-1">
+                                            <img src="~/images/medal-3.png" width="30" height="30" />
+                                        </div>
+                                        @Html.Action("ThinhHanh_Top_3", "Truyen")
+                                    </div>
+                                </li>
+                                @Html.Action("ThinhHanh_Top_10", "Truyen")
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-4">
+                        <section class="abc rounded-2 px-4 pt-3 pb-2">
+                            <h5 class="d-flex align-items-center py-1">Top Đề Cử</h5>
+                            <ul class="list-unstyled list-ranking m-0">
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class="index col-2 py-2">
+                                            <img src="~/images/medal.png" width="40" height="40" />
+                                        </div>
+                                        <div class="media w-75 align-items-center content pb-3">
+                                            @Html.Action("DeCu_Top", "Truyen")
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class="index col-2 pt-1">
+                                            <img src="~/images/medal-2.png" width="30" height="30" />
+                                        </div>
+                                        @Html.Action("DeCu_Top_2", "Truyen")
+                                    </div>
+                                </li>
+                                <li class="mt-1">
+                                    <div class="row">
+                                        <div class=" =index col-2 pt-1">
+                                            <img src="~/images/medal-3.png" width="30" height="30" />
+                                        </div>
+                                        @Html.Action("DeCu_Top_3", "Truyen")
+                                    </div>
+                                </li>
+                                @Html.Action("DeCu_Top_10", "Truyen")
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  @* ------------------------- End Of Xếp Hạng----------------------------------- *@ -->
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="content-new-update">
+                        <h5>Mới Đăng</h5>
+                        <div class="slidershows">
+                            @Html.Action("MoiDang", "Truyen")
+                            <div class="controls">
+                                <span class="arrow prev"><i class="fas fa-arrow-left"></i></span>
+                                <span class="arrow next"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="abc px-3">
+                        <h5 class="d-flex align-items-center py-2 ">Mới Hoàn Thành</h5>
+                        <div class="row">
+                            @Html.Action("MoiHoanThanh", "Truyen")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+ 
+

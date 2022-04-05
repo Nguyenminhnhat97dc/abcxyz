@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.Chuong>
+
+
+<table class="table table-striped  text-capitalize">
+    <thead class="thead-light text-center">
+        <tr>
+            <th scope="col">Chương</th>
+            <th scope="col">Tiêu Đề</th>
+            <th scope="col">Người Đăng</th>
+            <th scope="col">Ngày/Giờ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var chuong in Model)
+        {
+            <tr>
+                <td class="text-center">@chuong.ChuongSo</td>
+                <td class="text-center">@chuong.TieuDe</td>
+                <td class="text-center">@chuong.NguoiDang</td>
+                <td class="text-center">@chuong.NgayDang</td>
+            </tr>
+        }
+    </tbody>
+</table>

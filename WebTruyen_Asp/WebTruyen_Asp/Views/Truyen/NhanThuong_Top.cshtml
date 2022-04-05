@@ -1,0 +1,8 @@
+﻿<div class="media-body px-2 ">
+    <div class="text-overflow-1-lines font-weight-bold py-1"><a href="@Url.Action("ChiTietTruyen","Truyen",new { id =Model.MaTruyen })" style="font-size:16px;text-decoration:none;color:#333">@Model.TenTruyen</a></div>
+    <div class=" py-1">Điểm:<span class="text-success"> @Model.NhanThuong</span>&nbsp;&nbsp;<img style="width:1.0rem;height:1.0rem;vertical-align:middle; margin-bottom:5px;" src="~/images/present.png" /></div>
+    <div class="text-overflow-1-lines py-1"><i class="fas fa-user-tie"></i>&nbsp;&nbsp;@Model.TacGia</div>
+    <div><i class="fas fa-book py-2"></i>&nbsp;&nbsp;@Model.TheLoai</div>
+</div>
+<img class="float-right" src="~/images/img_truyen/@Model.AnhBia" width="85" height="110" style="box-shadow: 5px 5px 5px grey;">
+    

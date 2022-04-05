@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebTruyen_Asp.Class.TheLoai>
+<div id="data-ajax-category-theloai" class="col-9">
+    <div class="row">
+        @foreach (var truyen in Model)
+        {
+            <div class="col-6">
+                <div class=" media border-bottom py-4">
+                    <img src="~/images/img_truyen/@truyen.AnhBia" width="90" height="120" style="box-shadow: 8px 8px 10px grey;" />
+                    <div class="media-body ml-3">
+                        <div class="font-weight-bold">@truyen.TenTruyen</div>
+                        <div class="text-overflow-2-lines mt-2">
+                            @{
+                                StreamReader sr = File.OpenText(Server.MapPath("~/Data_ChuongTruyen/" + truyen.TenFoder + "/GioiThieu"));
+                                string strContents = sr.ReadToEnd();
+                            }
+                            @strContents
+                        </div>
+                        <div class="d-flex align-items-start mt-3">
+                            <div>
+                                <div class="text-overflow-1-lines"><i class="bi bi-person "></i>&nbsp;&nbsp;@truyen.TacGia</div>
+                                <div class=""><i class="bi bi-list"></i>&nbsp;&nbsp;@truyen.TongChuong</div>
+                            </div>
+                            <span class="type-story ml-auto text-capitalize d-inline-block" href="#">@truyen.TenTL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

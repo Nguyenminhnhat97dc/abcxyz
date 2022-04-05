@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../images/login-register.jpg);
+    background-size: cover;
+}
+
+.form-login {
+    width: 400px;
+    height: 420px;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 50px 60px;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 50px;
+}
+
+.form-login input {
+    display: flex;
+    width: 280px;
+    height: 35px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.btn {
+    width: 280px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: black;
+}
+
+.or {
+    text-align: center !important;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.fa-facebook {
+    font-size: 3rem;
+    color: #0032d1;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.fa-google-plus {
+    font-size: 3rem;
+    color: #e31305;
+    float: right;
+    margin-right: 10%;
+    cursor: pointer;
+}
+.form-register {
+    width: 400px;
+    height: 520px;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 50px 60px;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 50px;
+}
+
+.form-register input {
+    display: flex;
+    width: 280px;
+    height: 35px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
